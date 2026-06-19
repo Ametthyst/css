@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplo 02 css</title>
+    <style type="text/css">
+            
+    body{
+        margin: 0%;
+        background-color: #fca49a;
+    }            
+    #topo {
+      background-color: #b91e0c;
+      color: rgb(255, 255, 255);
+      padding: 25px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.452);
+      }        
+           
+     .logo {
+      display: inline-block;
+      font-size: 25px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .menu {
+      float: right
+    }
+
+    .menu a {
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 15px;
+      transition: 0.2s;
+    }
+
+    .menu a:hover {
+      color: #ffffff;
+    }
+#banner {
+      height: 200px;
+      /* background: linear-gradient(135deg, #0f172a, #2563eb); */
+      background-image: url('https://tr.rbxcdn.com/180DAY-95a48d9b2051185ec0e8c98c21d48319/768/432/Image/Webp/noFilter');
+      color: rgb(255, 255, 255);
+      padding: 90px 8%;
+      position: relative;
+      overflow: hidden;
+      text-align:center;
+    }
+    
+    .texto-banner {
+      text-align: center;   
+      background-color: rgba(0, 0, 0, 0.157);
+      padding: 10px;
+    }
+
+    .texto-banner h1 {
+      font-size: 46px;
+      margin-bottom: 15px;
+    }
+
+    .texto-banner p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 25px;
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+    }
+
+    .botao {
+      background-color: #b91e0c;
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+      padding: 13px 25px;
+      border-radius: 30px;
+      font-weight: bold;
+      display: inline-block;
+      transition: 0.4s;
+    }
+
+    .botao:hover {
+      background-color: #8f190c;
+      transform: translateY(-3px);
+      color:#ffffff
+    }
+
+   #menuses{
+    background-color: #fca49a;
+    position: relative;
+    padding: 80px;
+    margin-top: 50px;
+    }
+
+  .comida {
+      width: 200px;
+      min-height: 230px;
+      background-color: rgb(238, 236, 236);
+      display: inline-block;
+      vertical-align: top;
+      margin: 2%;
+      padding: 30px 22px;
+      border-radius: 18px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.670);
+      transition: 0.3s;
+      position: relative;
+      text-align: center;
+  }
+
+.comida h3{
+  color: rgb(88, 141, 8);
+}
+
+.comida p{
+  margin-bottom: 30px;
+}
+
+.comida a{
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #b91e0c;
+  border-radius: 10px;
+  padding: 10px;
+  width: 70px;
+}
+
+.comida a:hover {
+    background-color: #8f190c;
+    transform: translateY(-3px);
+    color:#ffffff
+}
+
+  .promocao {
+    background-color: #b91e0c;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 40px;
+    font-weight: bold;
+    position: absolute;
+    top: 15%;
+    left: 86%;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.300);
+    z-index: 2;
+    text-align: center;
+    width: 90px;
+    display: inline-block;
+    font-size: larger;
+  }
+
+  #rodape{
+      background-color: #b91e0c;
+      color: rgb(255, 255, 255);
+      padding: 25px;
+      text-align: center;
+      padding: 1px;
+      margin-top: 20px;
+  }
+    
+ </style>
+
+</head>
+<body>
+ 
+  <div id="topo">
+    <div class="logo">
+      🍕Pizza Place
+    </div>
+    <div class="menu">
+      <a href="#">Início</a>
+      <a href="#">Cardápio</a>
+      <a href="#">Promoções</a>
+      <a href="#">Contato</a>
+    </div>
+  </div>
+  
+  <div id="banner">
+    <div class="texto-banner">
+      <h1>A melhor pizzaria de Robloxia!</h1>
+      <p>Seu lanche favorito a poucos clique de estar na sua mão.</p>              
+      <a href="#" class="botao">Ver Cardápio</a>
+    </div>
+  </div>
+
+
+  <div id="menuses">
+    <div class="comida">
+      <h2>Pizza de queijo</h2>
+      <img src="https://static.wikia.nocookie.net/workatapizzaplace/images/1/16/CheesePizzaDecal.png/revision/latest?cb=20230316135729" width="150px" height="150px">
+      <h3>3$</h3>
+      <p>  Clássica, massa, molho, queijo e queijo.</p>        
+      <a href="#">Pedir agora</a>
+    </div>
+
+    <div class="comida">
+      <h2>Pizza de pepperoni</h2>       
+      <img src="https://static.wikia.nocookie.net/workatapizzaplace/images/7/75/PepperoniPizzaDecal.png/revision/latest?cb=20230316135741" width="150px" height="150px">
+      <h3>4$</h3>
+      <p>  Massa, molho, queijo e pepperoni.</p>
+      <a href="#">Pedir agora</a>
+    </div>
+
+    <div class="comida">
+      <h2>Pizza de linguiça</h2>
+      <img src="https://static.wikia.nocookie.net/workatapizzaplace/images/0/03/SausagePizzaDecal.png/revision/latest?cb=20230316135753" width="150px" height="150px">
+      <h3>4$</h3>
+      <p>  Massa, molho, queijo e linguiça.</p>
+      <a href="#">Pedir agora</a>  
+    </div>    
+      
+      <div class="promocao">Bebida!</div>
+    <div class="comida">    
+      <h2>Fizzly</h2>
+      <img src="https://static.wikia.nocookie.net/workatapizzaplace/images/3/3d/Fizzly.PNG/revision/latest?cb=20211107181138" width="80px" height="150px">
+      <h3>2$</h3>
+      <p>  Clássico refrigerante sabor limão.</p>
+      <a href="#">Pedir agora</a>  
+    </div>
+   </div>
+
+      <div id="rodape">
+      <p> 🍕Pizza Place      +1 202 555 012 Plaza     rd., em frente à b1</p>
+      <p>© 2026 PIZZA PLACE. Todos os direitos reservados.</p>
+    </div> 
+
+</body>
+</html>
